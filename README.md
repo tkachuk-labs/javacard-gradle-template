@@ -16,7 +16,7 @@ Features:
  - Build CAP for applets
  - Test applet code in [JCardSim] / physical cards
  - IntelliJ Idea: Coverage
- - Travis support 
+ - Travis support
 
 ### Template
 
@@ -59,19 +59,19 @@ Typical output:
 ```
 [ant:cap] [ INFO: ] Converter [v3.0.5]
 [ant:cap] [ INFO: ]     Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.
-[ant:cap]     
-[ant:cap]     
+[ant:cap]
+[ant:cap]
 [ant:cap] [ INFO: ] conversion completed with 0 errors and 0 warnings.
-[ant:verify] XII 10, 2017 10:45:05 ODP.  
+[ant:verify] XII 10, 2017 10:45:05 ODP.
 [ant:verify] INFO: Verifier [v3.0.5]
-[ant:verify] XII 10, 2017 10:45:05 ODP.  
+[ant:verify] XII 10, 2017 10:45:05 ODP.
 [ant:verify] INFO:     Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.
-[ant:verify]     
-[ant:verify]     
-[ant:verify] XII 10, 2017 10:45:05 ODP.  
+[ant:verify]
+[ant:verify]
+[ant:verify] XII 10, 2017 10:45:05 ODP.
 [ant:verify] INFO: Verifying CAP file /Users/dusanklinec/workspace/jcard/applet/out/cap/applet.cap
 [ant:verify] javacard/framework/Applet
-[ant:verify] XII 10, 2017 10:45:05 ODP.  
+[ant:verify] XII 10, 2017 10:45:05 ODP.
 [ant:verify] INFO: Verification completed with 0 warnings and 0 errors.
 ```
 
@@ -113,7 +113,7 @@ This project uses mainly:
 - https://github.com/martinpaljak/ant-javacard
 - https://github.com/martinpaljak/oracle_javacard_sdks
 - https://github.com/licel/jcardsim
-- Petr Svenda scripts 
+- Petr Svenda scripts
 
 Kudos for a great work!
 
@@ -131,19 +131,19 @@ Thanks to Martin Paljak's [ant-javacard] and [oracle_javacard_sdks] we support:
 
 ## Supported Java versions
 
-Java 8-u271 is the minimal version supported. 
+Java 8-u271 is the minimal version supported.
 
 Make sure you have up to date java version (`-u` version) as older java 8 versions
 have problems with recognizing some certificates as valid.
 
 Only some Java versions are supported by the JavaCard SDKs.
-Check the following compatibility table for more info: 
+Check the following compatibility table for more info:
 https://github.com/martinpaljak/ant-javacard/wiki/Version-compatibility
 
 ## Coverage
 
-This is a nice benefit of the IntelliJ Idea - gives you coverage 
-results out of the box. 
+This is a nice benefit of the IntelliJ Idea - gives you coverage
+results out of the box.
 
 You can see the test coverage on your applet code.
 
@@ -159,7 +159,7 @@ Coverage code:
 
 ## Troubleshooting
 
-If you experience the following error: 
+If you experience the following error:
 
 ```
 java.lang.VerifyError: Expecting a stackmap frame at branch target 19
@@ -187,7 +187,7 @@ However, if `api_class.jar` from the JavaCard SDK is on the classpath before the
 gradle-javacard-plugin v1.7.4 should fix this error.
 
 If you still experience this in IntelliJ Idea try: open project structure settings -> modules -> applet_test and move JCardSim to the top so it appears first on the classpath.
-This has to be done with each project reload from the Gradle. 
+This has to be done with each project reload from the Gradle.
 
 ## Roadmap
 

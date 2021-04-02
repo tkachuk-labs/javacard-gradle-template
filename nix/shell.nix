@@ -17,9 +17,8 @@ with pkgs;
 stdenv.mkDerivation {
   name = "workspace";
   buildInputs = [
-    /* IDE */
     haskell-ide
-    /* Utils */
+    jdk
     git
     cacert
   ];
